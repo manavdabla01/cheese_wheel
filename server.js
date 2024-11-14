@@ -1,10 +1,10 @@
 // server.js
 const express = require('express');
-const connectDB = require('./config/db');
+const connectDB = require('./CONFIG/db');
 const cors = require('cors');
-const userRoutes = require('./routes/userRoutes');
-const pizzaRoutes = require('./routes/pizzaRoutes');
-const orderRoutes = require('./routes/orderRoutes');
+const userRoutes = require('./ROUTES/userRoutes');
+const pizzaRoutes = require('./ROUTES/pizzaRoutes');
+const orderRoutes = require('./ROUTES/orderRoutes');
 require('dotenv').config();
 
 const app = express();
