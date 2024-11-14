@@ -1,6 +1,6 @@
 const express = require('express');
-const { signup, login,getAllUsers, updateUser, deleteUser } = require('../controllers/userController');
-const { authenticateJWT, authenticateAdminJWT } = require('../Middleware/authMiddleware');
+const { signup, login,getAllUsers, updateUser, deleteUser } = require('../CONTROLLERS/userController');
+const { authenticateJWT, authenticateAdminJWT } = require('../MIDDLEWARE/authMiddleware');
 const router = express.Router();
 
 router.post('/signup', signup);
