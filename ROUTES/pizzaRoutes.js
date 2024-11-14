@@ -1,6 +1,6 @@
 const express = require('express');
-const { addPizza, getPizzas, deletePizza, updatePizza } = require('../controllers/pizzaController');
-const { authenticateAdminJWT } = require('../Middleware/authMiddleware');
+const { addPizza, getPizzas, deletePizza, updatePizza } = require('../CONTROLLERS/pizzaController');
+const { authenticateAdminJWT } = require('../MIDDLEWARE/authMiddleware');
 const router = express.Router();
 
 router.post('/', authenticateAdminJWT, addPizza);
